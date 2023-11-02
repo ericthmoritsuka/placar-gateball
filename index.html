@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/gateball-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <title>Placar Gateball</title>
+</head>
+<body>
+
+    <div class="container-titulo">
+        <img src="img/acjr.png">
+        <h1 class="titulo">PLACAR GATEBALL</h1>
+        <h3 class="versao">v1.0</h3>
+    </div>
+
+    <div class="container times">
+        <div class="time" id="time-vermelho">
+            <h2>Vermelho</h2>
+            <div class="jogadores">
+                <div class="jogador" data-player="1">
+                    <h3>1</h3>
+                    <button class="cima">+</button>
+                    <span class="pontos">0</span>
+                    <button class="baixo">-</button>
+                </div>
+                <div class="jogador" data-player="3">
+                    <h3>3</h3>
+                    <button class="cima">+</button>
+                    <span class="pontos">0</span>
+                    <button class="baixo">-</button>
+                </div>
+                <div class="jogador" data-player="5">
+                    <h3>5</h3>
+                    <button class="cima">+</button>
+                    <span class="pontos">0</span>
+                    <button class="baixo">-</button>
+                </div>
+                <div class="jogador" data-player="7">
+                    <h3>7</h3>
+                    <button class="cima">+</button>
+                    <span class="pontos">0</span>
+                    <button class="baixo">-</button>
+                </div>
+                <div class="jogador" data-player="9">
+                    <h3>9</h3>
+                    <button class="cima">+</button>
+                    <span class="pontos">0</span>
+                    <button class="baixo">-</button>
+                </div>
+            </div>
+            <p>Total: <span class="total">0</span></p>
+        </div>
+
+        <div class="time" id="time-branco">
+            <h2>Branco</h2>
+            <div class="jogadores">
+                <div class="jogador" data-player="2">
+                    <h3>2</h3>
+                    <button class="cima">+</button>
+                    <span class="pontos">0</span>
+                    <button class="baixo">-</button>
+                </div>
+                <div class="jogador" data-player="4">
+                    <h4>4</h3>
+                    <button class="cima">+</button>
+                    <span class="pontos">0</span>
+                    <button class="baixo">-</button>
+                </div>
+                <div class="jogador" data-player="6">
+                    <h3>6</h3>
+                    <button class="cima">+</button>
+                    <span class="pontos">0</span>
+                    <button class="baixo">-</button>
+                </div>
+                <div class="jogador" data-player="8">
+                    <h3>8</h3>
+                    <button class="cima">+</button>
+                    <span class="pontos">0</span>
+                    <button class="baixo">-</button>
+                </div>
+                <div class="jogador" data-player="10">
+                    <h3>10</h3>
+                    <button class="cima">+</button>
+                    <span class="pontos">0</span>
+                    <button class="baixo">-</button>
+                </div>
+            </div>
+            <p>Total: <span class="total">0</span></p>
+        </div>
+    </div>
+
+    <div class="timer">
+        <h2>Timer</h2>
+        <div class="tempo"><span id="minutes">30</span>:<span id="seconds">00</span></div>
+        <div class="timer-buttons">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+        </div>
+    </div>
+    </div>
+
+    <audio id="timer-alert" src="./audio/buzzer.wav" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
